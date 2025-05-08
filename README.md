@@ -45,12 +45,15 @@ A brief explanation on the basic workflow of the application.
 
 ### Configuring the project for development
 
-1. Clone this repository
+Clone this repository
 
    ```shell
+   git clone https://github.com/Kamal-Singh22/Decentralized-Voting-System-using-Blockchain-Technology.git
+   cd dVoting
+   ```
  
 
-2. Run local Ethereum blockchain
+3. Run local Ethereum blockchain
 
    ```shell
    ganache-cli
@@ -58,15 +61,15 @@ A brief explanation on the basic workflow of the application.
 
    > Note: Do not close `ganache-cli` (the blockchain network needs to be running all the time)
 
-3. Configure metamask on the browser with the following details
+4. Configure metamask on the browser with the following details
 
    New RPC URL: `http://127.0.0.1:8545` *(use `port: 7545` for **ganache gui**, update it in the file:`truffle-config.js` as well)*
 
    Chain ID: `1337`
 
-4. Import account(s) using private keys from ganache-cli to the metamask extension on the browser
+5. Import account(s) using private keys from ganache-cli to the metamask extension on the browser
 
-5. Deploy smart contract to the (local) blockchain network (i.e ganache-cli)
+6. Deploy smart contract to the (local) blockchain network (i.e ganache-cli)
 
    ```shell
    # on the dVoting directory
@@ -75,16 +78,13 @@ A brief explanation on the basic workflow of the application.
 
    > Note: Use `truffle migrate --reset` for re-deployments
 
-6. Launch the development server (frontend)
+7. Launch the development server (frontend)
 
    ```shell
    cd client
    npm install
    npm start
    ```
-
-   > If you encounter **error** during `npm install`, please note that you might need to install Microsoft Visual C++ Redistributable packages from [learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) (here is the direct download link for X64: [aka.ms/vs/17/release/vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe))
-
 ## To-Do List
 
 Possible features to add/improve within the app.
